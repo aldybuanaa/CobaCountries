@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B48E5412974FCB400316E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48E5402974FCB400316E9F /* AppDelegate.swift */; };
+		8B48E5432974FCB400316E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48E5422974FCB400316E9F /* SceneDelegate.swift */; };
+		8B48E5452974FCB400316E9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48E5442974FCB400316E9F /* LoginViewController.swift */; };
+		8B48E54A2974FCB700316E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B48E5492974FCB700316E9F /* Assets.xcassets */; };
+		8B48E54D2974FCB700316E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B48E54B2974FCB700316E9F /* LaunchScreen.storyboard */; };
+		8B894D3C2982101E003A5A43 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894D3B2982101E003A5A43 /* CountriesViewController.swift */; };
+		8B894D3E29821341003A5A43 /* CountriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894D3D29821341003A5A43 /* CountriesViewCell.swift */; };
+		8B894D4529822648003A5A43 /* DetailCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894D4429822648003A5A43 /* DetailCountryViewController.swift */; };
+		8B8EDFA8299B39C500D64956 /* ErrorCountriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EDFA6299B39C500D64956 /* ErrorCountriesViewCell.swift */; };
+		8B8EDFA9299B39C500D64956 /* ErrorCountriesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8EDFA7299B39C500D64956 /* ErrorCountriesViewCell.xib */; };
+		8BA59646299486AE00CA5A93 /* Countries.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA59645299486AE00CA5A93 /* Countries.xib */; };
+		8BA596482994897600CA5A93 /* DetailCountry.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA596472994897600CA5A93 /* DetailCountry.xib */; };
+		8BA5964A2994E38600CA5A93 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA596492994E38600CA5A93 /* Login.xib */; };
+		8BCFFD85297F9D7600220C8C /* CountriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCFFD84297F9D7600220C8C /* CountriesAPI.swift */; };
+		8BCFFD87297FB42D00220C8C /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCFFD86297FB42D00220C8C /* Countries.swift */; };
+		8BE4C171298369330097CB9E /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4C170298369330097CB9E /* CountriesViewModel.swift */; };
+		8BEE148F298CFE9400738A15 /* CountriesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEE148E298CFE9400738A15 /* CountriesViewCell.xib */; };
+		8BF6DDE029752FFD00DAE3D2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF6DDDF29752FFD00DAE3D2 /* LoginViewModel.swift */; };
+		963797B4828ADAB210E5C8C0 /* Pods_CobaLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B5634D928CDFD19F66992F /* Pods_CobaLogin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B48E53D2974FCB400316E9F /* CobaLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobaLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B48E5402974FCB400316E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B48E5422974FCB400316E9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8B48E5442974FCB400316E9F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8B48E5492974FCB700316E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B48E54C2974FCB700316E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B48E54E2974FCB700316E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B894D3B2982101E003A5A43 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		8B894D3D29821341003A5A43 /* CountriesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewCell.swift; sourceTree = "<group>"; };
+		8B894D4429822648003A5A43 /* DetailCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCountryViewController.swift; sourceTree = "<group>"; };
+		8B8EDFA6299B39C500D64956 /* ErrorCountriesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCountriesViewCell.swift; sourceTree = "<group>"; };
+		8B8EDFA7299B39C500D64956 /* ErrorCountriesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorCountriesViewCell.xib; sourceTree = "<group>"; };
+		8BA59645299486AE00CA5A93 /* Countries.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Countries.xib; sourceTree = "<group>"; };
+		8BA596472994897600CA5A93 /* DetailCountry.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCountry.xib; sourceTree = "<group>"; };
+		8BA596492994E38600CA5A93 /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
+		8BCFFD84297F9D7600220C8C /* CountriesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesAPI.swift; sourceTree = "<group>"; };
+		8BCFFD86297FB42D00220C8C /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		8BE4C170298369330097CB9E /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
+		8BEE148E298CFE9400738A15 /* CountriesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesViewCell.xib; sourceTree = "<group>"; };
+		8BF6DDDF29752FFD00DAE3D2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8F1968B9C9862FB539CF78F5 /* Pods-CobaLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobaLogin.release.xcconfig"; path = "Target Support Files/Pods-CobaLogin/Pods-CobaLogin.release.xcconfig"; sourceTree = "<group>"; };
+		A50ED36F880C67BAFF7D01BA /* Pods-CobaLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobaLogin.debug.xcconfig"; path = "Target Support Files/Pods-CobaLogin/Pods-CobaLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		B4B5634D928CDFD19F66992F /* Pods_CobaLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CobaLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B48E53A2974FCB400316E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963797B4828ADAB210E5C8C0 /* Pods_CobaLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E330324C7AF7EB5059B591B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A50ED36F880C67BAFF7D01BA /* Pods-CobaLogin.debug.xcconfig */,
+				8F1968B9C9862FB539CF78F5 /* Pods-CobaLogin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8B48E5342974FCB400316E9F = {
+			isa = PBXGroup;
+			children = (
+				8B48E53F2974FCB400316E9F /* CobaLogin */,
+				8B48E53E2974FCB400316E9F /* Products */,
+				1E330324C7AF7EB5059B591B /* Pods */,
+				949E0ACABD026EAE83646A78 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B48E53E2974FCB400316E9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B48E53D2974FCB400316E9F /* CobaLogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B48E53F2974FCB400316E9F /* CobaLogin */ = {
+			isa = PBXGroup;
+			children = (
+				8BCFFD83297F9D3900220C8C /* Services */,
+				8BCFFD80297F856500220C8C /* Models */,
+				8BCFFD81297F857600220C8C /* ViewModels */,
+				8BCFFD7E297F853D00220C8C /* Views */,
+				8B48E5402974FCB400316E9F /* AppDelegate.swift */,
+				8B48E5422974FCB400316E9F /* SceneDelegate.swift */,
+				8B48E5492974FCB700316E9F /* Assets.xcassets */,
+				8B48E54B2974FCB700316E9F /* LaunchScreen.storyboard */,
+				8B48E54E2974FCB700316E9F /* Info.plist */,
+			);
+			path = CobaLogin;
+			sourceTree = "<group>";
+		};
+		8B894D3729820F58003A5A43 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				8BA596492994E38600CA5A93 /* Login.xib */,
+				8B48E5442974FCB400316E9F /* LoginViewController.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		8B894D3829820F91003A5A43 /* CountriesView */ = {
+			isa = PBXGroup;
+			children = (
+				8B894D3B2982101E003A5A43 /* CountriesViewController.swift */,
+				8BA59645299486AE00CA5A93 /* Countries.xib */,
+				8B894D3D29821341003A5A43 /* CountriesViewCell.swift */,
+				8BEE148E298CFE9400738A15 /* CountriesViewCell.xib */,
+				8B8EDFA6299B39C500D64956 /* ErrorCountriesViewCell.swift */,
+				8B8EDFA7299B39C500D64956 /* ErrorCountriesViewCell.xib */,
+			);
+			path = CountriesView;
+			sourceTree = "<group>";
+		};
+		8B894D3F298214B0003A5A43 /* LoginViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8BF6DDDF29752FFD00DAE3D2 /* LoginViewModel.swift */,
+			);
+			path = LoginViewModel;
+			sourceTree = "<group>";
+		};
+		8B894D40298214C2003A5A43 /* CountriesViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8BE4C170298369330097CB9E /* CountriesViewModel.swift */,
+			);
+			path = CountriesViewModel;
+			sourceTree = "<group>";
+		};
+		8B894D41298225F8003A5A43 /* DetailCountryView */ = {
+			isa = PBXGroup;
+			children = (
+				8B894D4429822648003A5A43 /* DetailCountryViewController.swift */,
+				8BA596472994897600CA5A93 /* DetailCountry.xib */,
+			);
+			path = DetailCountryView;
+			sourceTree = "<group>";
+		};
+		8BCFFD7E297F853D00220C8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B894D41298225F8003A5A43 /* DetailCountryView */,
+				8B894D3829820F91003A5A43 /* CountriesView */,
+				8B894D3729820F58003A5A43 /* LoginView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BCFFD80297F856500220C8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BCFFD86297FB42D00220C8C /* Countries.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BCFFD81297F857600220C8C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B894D40298214C2003A5A43 /* CountriesViewModel */,
+				8B894D3F298214B0003A5A43 /* LoginViewModel */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8BCFFD83297F9D3900220C8C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8BCFFD84297F9D7600220C8C /* CountriesAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		949E0ACABD026EAE83646A78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4B5634D928CDFD19F66992F /* Pods_CobaLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B48E53C2974FCB400316E9F /* CobaLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B48E5512974FCB700316E9F /* Build configuration list for PBXNativeTarget "CobaLogin" */;
+			buildPhases = (
+				468188975A87D4568C2C26C6 /* [CP] Check Pods Manifest.lock */,
+				8B48E5392974FCB400316E9F /* Sources */,
+				8B48E53A2974FCB400316E9F /* Frameworks */,
+				8B48E53B2974FCB400316E9F /* Resources */,
+				76139314E42BCD847F9DBF07 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CobaLogin;
+			productName = CobaLogin;
+			productReference = 8B48E53D2974FCB400316E9F /* CobaLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B48E5352974FCB400316E9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					8B48E53C2974FCB400316E9F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 8B48E5382974FCB400316E9F /* Build configuration list for PBXProject "CobaLogin" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B48E5342974FCB400316E9F;
+			productRefGroup = 8B48E53E2974FCB400316E9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B48E53C2974FCB400316E9F /* CobaLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B48E53B2974FCB400316E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA596482994897600CA5A93 /* DetailCountry.xib in Resources */,
+				8BEE148F298CFE9400738A15 /* CountriesViewCell.xib in Resources */,
+				8B8EDFA9299B39C500D64956 /* ErrorCountriesViewCell.xib in Resources */,
+				8B48E54D2974FCB700316E9F /* LaunchScreen.storyboard in Resources */,
+				8B48E54A2974FCB700316E9F /* Assets.xcassets in Resources */,
+				8BA59646299486AE00CA5A93 /* Countries.xib in Resources */,
+				8BA5964A2994E38600CA5A93 /* Login.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		468188975A87D4568C2C26C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CobaLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76139314E42BCD847F9DBF07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CobaLogin/Pods-CobaLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CobaLogin/Pods-CobaLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CobaLogin/Pods-CobaLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B48E5392974FCB400316E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCFFD85297F9D7600220C8C /* CountriesAPI.swift in Sources */,
+				8B8EDFA8299B39C500D64956 /* ErrorCountriesViewCell.swift in Sources */,
+				8B894D4529822648003A5A43 /* DetailCountryViewController.swift in Sources */,
+				8BF6DDE029752FFD00DAE3D2 /* LoginViewModel.swift in Sources */,
+				8BE4C171298369330097CB9E /* CountriesViewModel.swift in Sources */,
+				8B48E5452974FCB400316E9F /* LoginViewController.swift in Sources */,
+				8B894D3C2982101E003A5A43 /* CountriesViewController.swift in Sources */,
+				8B48E5412974FCB400316E9F /* AppDelegate.swift in Sources */,
+				8BCFFD87297FB42D00220C8C /* Countries.swift in Sources */,
+				8B894D3E29821341003A5A43 /* CountriesViewCell.swift in Sources */,
+				8B48E5432974FCB400316E9F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8B48E54B2974FCB700316E9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B48E54C2974FCB700316E9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B48E54F2974FCB700316E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B48E5502974FCB700316E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B48E5522974FCB700316E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A50ED36F880C67BAFF7D01BA /* Pods-CobaLogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H483TM3N88;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CobaLogin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldybuana.CobaLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B48E5532974FCB700316E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1968B9C9862FB539CF78F5 /* Pods-CobaLogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H483TM3N88;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CobaLogin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldybuana.CobaLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B48E5382974FCB400316E9F /* Build configuration list for PBXProject "CobaLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B48E54F2974FCB700316E9F /* Debug */,
+				8B48E5502974FCB700316E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B48E5512974FCB700316E9F /* Build configuration list for PBXNativeTarget "CobaLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B48E5522974FCB700316E9F /* Debug */,
+				8B48E5532974FCB700316E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B48E5352974FCB400316E9F /* Project object */;
+}
