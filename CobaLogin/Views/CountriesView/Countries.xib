@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountriesViewController" customModule="CobaLogin" customModuleProvider="target">
             <connections>
+                <outlet property="errorView" destination="cih-tw-hMz" id="VCK-hX-lj7"/>
+                <outlet property="spinner" destination="MiV-85-kbo" id="azE-LE-t4Q"/>
                 <outlet property="tableView" destination="gR1-cf-uzN" id="e0Y-oF-KGU"/>
                 <outlet property="view" destination="OxT-Ui-KEV" id="Ixa-0V-GbD"/>
             </connections>
@@ -23,11 +26,51 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cih-tw-hMz">
+                    <rect key="frame" x="76.666666666666686" y="362" width="240" height="128"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="c7H-P2-hF9">
+                            <rect key="frame" x="23" y="31.333333333333321" width="193.66666666666666" height="65.666666666666686"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdL-x9-Pnh">
+                                    <rect key="frame" x="0.0" y="0.0" width="193.66666666666666" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMc-fq-kvi">
+                                    <rect key="frame" x="47.999999999999986" y="31.333333333333375" width="98.000000000000014" height="34.333333333333343"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Reload" imagePadding="4">
+                                        <imageReference key="image" image="arrow.clockwise" catalog="system" symbolScale="medium"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="reloadButton:" destination="-1" eventType="touchUpInside" id="lFC-Gg-bOU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="c7H-P2-hF9" firstAttribute="centerY" secondItem="cih-tw-hMz" secondAttribute="centerY" id="UK3-AL-9Uy"/>
+                        <constraint firstItem="c7H-P2-hF9" firstAttribute="centerX" secondItem="cih-tw-hMz" secondAttribute="centerX" id="VMO-fz-Xac"/>
+                        <constraint firstAttribute="height" constant="128" id="goW-9o-jGa"/>
+                        <constraint firstAttribute="width" constant="240" id="vXP-F8-QM0"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="MiV-85-kbo">
+                    <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="oIZ-Mj-Xmq"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="gR1-cf-uzN" firstAttribute="trailing" secondItem="oIZ-Mj-Xmq" secondAttribute="trailing" id="AOz-9G-cSj"/>
+                <constraint firstItem="cih-tw-hMz" firstAttribute="centerX" secondItem="OxT-Ui-KEV" secondAttribute="centerX" id="NPk-nL-vQj"/>
+                <constraint firstItem="MiV-85-kbo" firstAttribute="centerY" secondItem="OxT-Ui-KEV" secondAttribute="centerY" id="cZk-DI-utB"/>
+                <constraint firstItem="cih-tw-hMz" firstAttribute="centerY" secondItem="OxT-Ui-KEV" secondAttribute="centerY" id="jgy-WS-p3G"/>
+                <constraint firstItem="MiV-85-kbo" firstAttribute="centerX" secondItem="OxT-Ui-KEV" secondAttribute="centerX" id="pXU-Xb-7h2"/>
                 <constraint firstAttribute="bottom" secondItem="gR1-cf-uzN" secondAttribute="bottom" id="s69-2o-y9v"/>
                 <constraint firstItem="gR1-cf-uzN" firstAttribute="leading" secondItem="oIZ-Mj-Xmq" secondAttribute="leading" id="vQ0-5j-qoI"/>
                 <constraint firstItem="gR1-cf-uzN" firstAttribute="top" secondItem="OxT-Ui-KEV" secondAttribute="top" id="zB9-KU-gVA"/>
@@ -36,6 +79,7 @@
         </view>
     </objects>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

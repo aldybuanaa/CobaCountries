@@ -15,7 +15,8 @@ class CountriesViewModel {
             switch result {
             case .success(let countries):
                 self?.countries = countries
-                dump(self?.countries)
+                self?.countries.sort(by: {$0.name?.common ?? "" < $1.name?.common ?? ""})
+//                dump(self?.countries)
                 completion(nil)
                 
             case.failure(let error):
@@ -23,14 +24,6 @@ class CountriesViewModel {
             }
         }
     }
-    
-//    func fetch(completion: @escaping () -> ()) {
-//        CountriesAPI.shared.fetchData { countries in
-//            self.countries = countries
-//            dump(self.countries)
-//            completion()
-//        }
-//    }
     
     func numberOrRows() -> Int {
         return self.countries.count

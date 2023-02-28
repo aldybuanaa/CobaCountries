@@ -1,0 +1,6 @@
+module Pods_CobaLoginTests {
+  umbrella header "Pods-CobaLoginTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AEA796F75A1D525EEF629F3 /* libPods-CobaLoginTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB24718EF6253E0D6E044C4 /* libPods-CobaLoginTests.a */; };
 		8B48E5412974FCB400316E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48E5402974FCB400316E9F /* AppDelegate.swift */; };
 		8B48E5432974FCB400316E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48E5422974FCB400316E9F /* SceneDelegate.swift */; };
 		8B48E5452974FCB400316E9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48E5442974FCB400316E9F /* LoginViewController.swift */; };
 		8B48E54A2974FCB700316E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B48E5492974FCB700316E9F /* Assets.xcassets */; };
 		8B48E54D2974FCB700316E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B48E54B2974FCB700316E9F /* LaunchScreen.storyboard */; };
+		8B8745E829AE22D500C7F763 /* CountriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8745E729AE22D500C7F763 /* CountriesViewModelTests.swift */; };
+		8B8745EA29AE22EB00C7F763 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8745E929AE22EB00C7F763 /* LoginViewModelTests.swift */; };
 		8B894D3C2982101E003A5A43 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894D3B2982101E003A5A43 /* CountriesViewController.swift */; };
 		8B894D3E29821341003A5A43 /* CountriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894D3D29821341003A5A43 /* CountriesViewCell.swift */; };
 		8B894D4529822648003A5A43 /* DetailCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894D4429822648003A5A43 /* DetailCountryViewController.swift */; };
-		8B8EDFA8299B39C500D64956 /* ErrorCountriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EDFA6299B39C500D64956 /* ErrorCountriesViewCell.swift */; };
-		8B8EDFA9299B39C500D64956 /* ErrorCountriesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8EDFA7299B39C500D64956 /* ErrorCountriesViewCell.xib */; };
 		8BA59646299486AE00CA5A93 /* Countries.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA59645299486AE00CA5A93 /* Countries.xib */; };
 		8BA596482994897600CA5A93 /* DetailCountry.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA596472994897600CA5A93 /* DetailCountry.xib */; };
 		8BA5964A2994E38600CA5A93 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA596492994E38600CA5A93 /* Login.xib */; };
@@ -28,7 +29,18 @@
 		963797B4828ADAB210E5C8C0 /* Pods_CobaLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B5634D928CDFD19F66992F /* Pods_CobaLogin.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8B86058429A3525E00BCB484 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B48E5352974FCB400316E9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B48E53C2974FCB400316E9F;
+			remoteInfo = CobaLogin;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		20C5F590C6A324D533D73B44 /* Pods-CobaLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobaLoginTests.release.xcconfig"; path = "Target Support Files/Pods-CobaLoginTests/Pods-CobaLoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B48E53D2974FCB400316E9F /* CobaLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobaLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B48E5402974FCB400316E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B48E5422974FCB400316E9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,11 +48,12 @@
 		8B48E5492974FCB700316E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B48E54C2974FCB700316E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B48E54E2974FCB700316E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B86058029A3525E00BCB484 /* CobaLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CobaLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8745E729AE22D500C7F763 /* CountriesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModelTests.swift; sourceTree = "<group>"; };
+		8B8745E929AE22EB00C7F763 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		8B894D3B2982101E003A5A43 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
 		8B894D3D29821341003A5A43 /* CountriesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewCell.swift; sourceTree = "<group>"; };
 		8B894D4429822648003A5A43 /* DetailCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCountryViewController.swift; sourceTree = "<group>"; };
-		8B8EDFA6299B39C500D64956 /* ErrorCountriesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCountriesViewCell.swift; sourceTree = "<group>"; };
-		8B8EDFA7299B39C500D64956 /* ErrorCountriesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorCountriesViewCell.xib; sourceTree = "<group>"; };
 		8BA59645299486AE00CA5A93 /* Countries.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Countries.xib; sourceTree = "<group>"; };
 		8BA596472994897600CA5A93 /* DetailCountry.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCountry.xib; sourceTree = "<group>"; };
 		8BA596492994E38600CA5A93 /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
@@ -51,7 +64,9 @@
 		8BF6DDDF29752FFD00DAE3D2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8F1968B9C9862FB539CF78F5 /* Pods-CobaLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobaLogin.release.xcconfig"; path = "Target Support Files/Pods-CobaLogin/Pods-CobaLogin.release.xcconfig"; sourceTree = "<group>"; };
 		A50ED36F880C67BAFF7D01BA /* Pods-CobaLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobaLogin.debug.xcconfig"; path = "Target Support Files/Pods-CobaLogin/Pods-CobaLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		A610BC3336F54D690D62B4D0 /* Pods-CobaLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobaLoginTests.debug.xcconfig"; path = "Target Support Files/Pods-CobaLoginTests/Pods-CobaLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B5634D928CDFD19F66992F /* Pods_CobaLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CobaLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB24718EF6253E0D6E044C4 /* libPods-CobaLoginTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CobaLoginTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +78,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B86057D29A3525D00BCB484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEA796F75A1D525EEF629F3 /* libPods-CobaLoginTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +94,8 @@
 			children = (
 				A50ED36F880C67BAFF7D01BA /* Pods-CobaLogin.debug.xcconfig */,
 				8F1968B9C9862FB539CF78F5 /* Pods-CobaLogin.release.xcconfig */,
+				A610BC3336F54D690D62B4D0 /* Pods-CobaLoginTests.debug.xcconfig */,
+				20C5F590C6A324D533D73B44 /* Pods-CobaLoginTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -79,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				8B48E53F2974FCB400316E9F /* CobaLogin */,
+				8B86058129A3525E00BCB484 /* CobaLoginTests */,
 				8B48E53E2974FCB400316E9F /* Products */,
 				1E330324C7AF7EB5059B591B /* Pods */,
 				949E0ACABD026EAE83646A78 /* Frameworks */,
@@ -89,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				8B48E53D2974FCB400316E9F /* CobaLogin.app */,
+				8B86058029A3525E00BCB484 /* CobaLoginTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +136,15 @@
 			path = CobaLogin;
 			sourceTree = "<group>";
 		};
+		8B86058129A3525E00BCB484 /* CobaLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B8745E729AE22D500C7F763 /* CountriesViewModelTests.swift */,
+				8B8745E929AE22EB00C7F763 /* LoginViewModelTests.swift */,
+			);
+			path = CobaLoginTests;
+			sourceTree = "<group>";
+		};
 		8B894D3729820F58003A5A43 /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,8 +161,6 @@
 				8BA59645299486AE00CA5A93 /* Countries.xib */,
 				8B894D3D29821341003A5A43 /* CountriesViewCell.swift */,
 				8BEE148E298CFE9400738A15 /* CountriesViewCell.xib */,
-				8B8EDFA6299B39C500D64956 /* ErrorCountriesViewCell.swift */,
-				8B8EDFA7299B39C500D64956 /* ErrorCountriesViewCell.xib */,
 			);
 			path = CountriesView;
 			sourceTree = "<group>";
@@ -195,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				B4B5634D928CDFD19F66992F /* Pods_CobaLogin.framework */,
+				DDB24718EF6253E0D6E044C4 /* libPods-CobaLoginTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,6 +256,25 @@
 			productReference = 8B48E53D2974FCB400316E9F /* CobaLogin.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8B86057F29A3525D00BCB484 /* CobaLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B86058829A3525E00BCB484 /* Build configuration list for PBXNativeTarget "CobaLoginTests" */;
+			buildPhases = (
+				D62483F0A3D1368BD7F9960E /* [CP] Check Pods Manifest.lock */,
+				8B86057C29A3525D00BCB484 /* Sources */,
+				8B86057D29A3525D00BCB484 /* Frameworks */,
+				8B86057E29A3525D00BCB484 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B86058529A3525E00BCB484 /* PBXTargetDependency */,
+			);
+			name = CobaLoginTests;
+			productName = CobaLoginTests;
+			productReference = 8B86058029A3525E00BCB484 /* CobaLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,6 +287,10 @@
 				TargetAttributes = {
 					8B48E53C2974FCB400316E9F = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					8B86057F29A3525D00BCB484 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8B48E53C2974FCB400316E9F;
 					};
 				};
 			};
@@ -250,6 +308,7 @@
 			projectRoot = "";
 			targets = (
 				8B48E53C2974FCB400316E9F /* CobaLogin */,
+				8B86057F29A3525D00BCB484 /* CobaLoginTests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,11 +320,17 @@
 			files = (
 				8BA596482994897600CA5A93 /* DetailCountry.xib in Resources */,
 				8BEE148F298CFE9400738A15 /* CountriesViewCell.xib in Resources */,
-				8B8EDFA9299B39C500D64956 /* ErrorCountriesViewCell.xib in Resources */,
 				8B48E54D2974FCB700316E9F /* LaunchScreen.storyboard in Resources */,
 				8B48E54A2974FCB700316E9F /* Assets.xcassets in Resources */,
 				8BA59646299486AE00CA5A93 /* Countries.xib in Resources */,
 				8BA5964A2994E38600CA5A93 /* Login.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B86057E29A3525D00BCB484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +376,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CobaLogin/Pods-CobaLogin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D62483F0A3D1368BD7F9960E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CobaLoginTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -319,7 +406,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BCFFD85297F9D7600220C8C /* CountriesAPI.swift in Sources */,
-				8B8EDFA8299B39C500D64956 /* ErrorCountriesViewCell.swift in Sources */,
 				8B894D4529822648003A5A43 /* DetailCountryViewController.swift in Sources */,
 				8BF6DDE029752FFD00DAE3D2 /* LoginViewModel.swift in Sources */,
 				8BE4C171298369330097CB9E /* CountriesViewModel.swift in Sources */,
@@ -332,7 +418,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B86057C29A3525D00BCB484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8745EA29AE22EB00C7F763 /* LoginViewModelTests.swift in Sources */,
+				8B8745E829AE22D500C7F763 /* CountriesViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B86058529A3525E00BCB484 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B48E53C2974FCB400316E9F /* CobaLogin */;
+			targetProxy = 8B86058429A3525E00BCB484 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8B48E54B2974FCB700316E9F /* LaunchScreen.storyboard */ = {
@@ -520,6 +623,44 @@
 			};
 			name = Release;
 		};
+		8B86058629A3525E00BCB484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A610BC3336F54D690D62B4D0 /* Pods-CobaLoginTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H483TM3N88;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldybuana.CobaLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CobaLogin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CobaLogin";
+			};
+			name = Debug;
+		};
+		8B86058729A3525E00BCB484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C5F590C6A324D533D73B44 /* Pods-CobaLoginTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H483TM3N88;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldybuana.CobaLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CobaLogin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CobaLogin";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -537,6 +678,15 @@
 			buildConfigurations = (
 				8B48E5522974FCB700316E9F /* Debug */,
 				8B48E5532974FCB700316E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B86058829A3525E00BCB484 /* Build configuration list for PBXNativeTarget "CobaLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B86058629A3525E00BCB484 /* Debug */,
+				8B86058729A3525E00BCB484 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
